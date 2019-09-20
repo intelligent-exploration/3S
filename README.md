@@ -13,7 +13,7 @@ The codes available here are as follows:
 
 ## Usage
 
-### ilr Transformation
+### ilr transformation
 The input data to many statistical techniques like factor analysis are required to follow a normal or symmetric distribution. The Stream sediment geochemical data are categorized as the compositional data and they represent a closed number system. In this system, individual variables are not independent and they are parts of a whole. Log-ratio transformations are suggested to be applied on the data prior to the factor analysis through opening the close range of variation. Different transformation methods have been discussed before to reach symmetric distributions from primary geochemical data. According to Filzmoser et al. (2009), isometric log-ratio (ilr) transformation involves some theoretical advantages over other log-ratio transformations for statistical analysis of the geochemical data.
 
 The input variable *A* to the transformation code is an m by n matrix that m equals the number of samples and n equals the number of elements which have been analyzed. Each array in this matrix is the concentration value of a specific element. The output of "ilr_Univariate" code *C* provides the normalized data for univariate analysis, and the output of "ilr_Multivariate" code *B* provides the normalized data for multivariate analysis.
@@ -29,7 +29,7 @@ This is a discrete mapping approach which has been proposed by Yousefi et al. (2
 The input variable *A* to this code has to be prepared in three columns or more (m by n). The number of rows (m) in the input matrix equals the number of samples. The first and second columns are respectively Catchment Basin ID and Point ID. The third column to the last (n) include geochemical parameters which have been assigned to each point. The output matrix which includes the weights and their fuzzy equivalents is called *WDCB_Mat*. The number of rows in that equals the number of catchment basins. The first and second columns are respectively Basin ID and number of samples in each catchment basin. The third column to the column n are respectively the weights calculated for each catchment basin according to the geochemical parameter which has been assigned to the sampling points in equivalent column of the input matrix. The column n to the last show the fuzzy equivalent of the columns 3 to n respectively.
 
 ## References
-Farahbakhsh, E., Chandra, R., Eslamkish, T., Muller, R. D., Discrete geochemical mapping of the stream sediment samples for prospecting porphyry Cu-Au mineralization (Under Review)
+Farahbakhsh, E., Chandra, R., Eslamkish, T., Muller, R. D., 2019, Modeling geochemical anomalies of stream sediment data through a weighted drainage catchment basin method for detecting porphyry Cu-Au mineralization, *Journal of Geochemical Exploration* 204, 12-32
 
 Filzmoser, P., Hron, K., Reimann, C., 2009, Univariate statistical analysis of environmental (compositional) data: Problems and possibilities, *Science of The Total Environment*, 407(23), 6100-6108
 
